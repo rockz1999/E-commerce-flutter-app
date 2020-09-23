@@ -25,10 +25,12 @@ abstract class FontSizes {
 }
 
 abstract class FontColors {
-  static Color get primaryColor => Color(0xFFDE1692);
-
+  static Color get bgColor => Color(0xFFF6F6F6);
+  static Color get primaryColor => Color(0xFFDE4463);
   static Color get white78 => Color(0xC7FFFFFF);
-  static Color get blueDark => Color(0xFF007AFF);
+  static Color get secondaryColor => Color(0xFF132743);
+  static Color get cardColor => Color(0xFFFAF3DD);
+  static Color get errorColor => Color(0xFFCD0A0A);
   static Color get greyDark => Color(0xFF454F63);
   static Color get greyMid => Color(0xFF959DAD);
   static Color get greyLight => Color(0xFFBFC5D3);
@@ -38,16 +40,16 @@ abstract class FontColors {
 const MaterialColor primarySwatch = const MaterialColor(
   0xFFDE1692,
   const <int, Color>{
-    50: const Color(0xFFDE1692),
-    100: const Color(0xFFDE1692),
-    200: const Color(0xFFDE1692),
-    300: const Color(0xFFDE1692),
-    400: const Color(0xFFDE1692),
-    500: const Color(0xFFDE1692),
-    600: const Color(0xFFDE1692),
-    700: const Color(0xFFDE1692),
-    800: const Color(0xFFDE1692),
-    900: const Color(0xFFDE1692),
+    50: const Color(0xFFDE4463),
+    100: const Color(0xFFDE4463),
+    200: const Color(0xFFDE4463),
+    300: const Color(0xFFDE4463),
+    400: const Color(0xFFDE4463),
+    500: const Color(0xFFDE4463),
+    600: const Color(0xFFDE4463),
+    700: const Color(0xFFDE4463),
+    800: const Color(0xFFDE4463),
+    900: const Color(0xFFDE4463),
   },
 );
 
@@ -56,7 +58,6 @@ abstract class TextStyles {
       TextStyle(fontFamily: Fonts.gibsonSemiBold);
   static TextStyle get gibsonRegular =>
       TextStyle(fontFamily: Fonts.gibsonRegular);
-
   static TextStyle get poppinsRegular =>
       TextStyle(fontFamily: Fonts.poppinsRegular);
   static TextStyle get poppinsSemiBold =>
@@ -82,6 +83,12 @@ extension TextStyleHelpers on TextStyle {
   ///#FFFFFF
   TextStyle get white => copyWith(color: Colors.white);
 
+  //#Cd0A0A
+  TextStyle get errorColor => copyWith(color: FontColors.errorColor);
+
+  //#132743
+  TextStyle get secondaryColor => copyWith(color: FontColors.secondaryColor);
+
   ///#C7FFFF
   TextStyle get white78 => copyWith(color: FontColors.white78);
 
@@ -90,9 +97,6 @@ extension TextStyleHelpers on TextStyle {
 
   ///#454F63
   TextStyle get greyDark => copyWith(color: FontColors.greyDark);
-
-  ///#007AFF
-  TextStyle get blueDark => copyWith(color: FontColors.blueDark);
 
   ///#959DAD
   TextStyle get greyMid => copyWith(color: FontColors.greyMid);
