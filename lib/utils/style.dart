@@ -1,12 +1,22 @@
 import 'package:flutter/material.dart';
 
 abstract class Fonts {
-  static String get gibsonSemiBold => "gibson_semibold";
-  static String get gibsonRegular => "gibson_regular";
+  static String get sansBold => "Sans_Bold";
+  static String get sansRegular => "Sans_Regular";
+  static String get sansMedium => "Sans_Medium";
+  static String get sansSemiBold => "Sans_SemiBold";
+  static String get sansExtraBold => "Sans_ExtraBold";
 
-  static String get poppinsRegular => "poppins_regular";
-  static String get poppinsSemiBold => "poppins_semibold";
-  static String get poppinsBold => "poppins_bold";
+  static String get serifSansBold => "Serif-sans_Bold";
+  static String get serifSansBoldItalic => "Serif-sans_BoldItalic";
+  static String get serifSansSemiBold => "Serif-sans_SemiBold";
+  static String get serifSansExtraBold => "Serif-sans_ExtraBold";
+  static String get serifSansExtraBoldItalic => "Serif-sans_ExtraBoldItalic";
+  static String get serifSansSemiBoldItalic => "Serif-sans_SemiBoldItalic";
+  static String get serifSansRegular => "Serif-sans_Regular";
+  static String get serifSansLight => "Serif-sans_Light";
+  static String get serifSansLightItalic => "Serif-sans_LightItalic";
+  static String get serifSansItalic => "Serif-sans_Iralic";
 }
 
 abstract class FontSizes {
@@ -54,15 +64,34 @@ const MaterialColor primarySwatch = const MaterialColor(
 );
 
 abstract class TextStyles {
-  static TextStyle get gibsonSemiBold =>
-      TextStyle(fontFamily: Fonts.gibsonSemiBold);
-  static TextStyle get gibsonRegular =>
-      TextStyle(fontFamily: Fonts.gibsonRegular);
-  static TextStyle get poppinsRegular =>
-      TextStyle(fontFamily: Fonts.poppinsRegular);
-  static TextStyle get poppinsSemiBold =>
-      TextStyle(fontFamily: Fonts.poppinsSemiBold);
-  static TextStyle get poppinsBold => TextStyle(fontFamily: Fonts.poppinsBold);
+  static TextStyle get sansBold => TextStyle(fontFamily: Fonts.sansBold);
+  static TextStyle get sansRegular => TextStyle(fontFamily: Fonts.sansRegular);
+  static TextStyle get sansMedium => TextStyle(fontFamily: Fonts.sansMedium);
+  static TextStyle get sansSemiBold =>
+      TextStyle(fontFamily: Fonts.sansSemiBold);
+  static TextStyle get sansExtraBold =>
+      TextStyle(fontFamily: Fonts.sansExtraBold);
+
+  static TextStyle get serifSansBold =>
+      TextStyle(fontFamily: Fonts.serifSansBold);
+  static TextStyle get serifSansBoldItalic =>
+      TextStyle(fontFamily: Fonts.serifSansBoldItalic);
+  static TextStyle get serifSansSemiBold =>
+      TextStyle(fontFamily: Fonts.serifSansSemiBold);
+  static TextStyle get serifSansExtraBold =>
+      TextStyle(fontFamily: Fonts.serifSansExtraBold);
+  static TextStyle get serifSansExtraBoldItalic =>
+      TextStyle(fontFamily: Fonts.serifSansExtraBoldItalic);
+  static TextStyle get serifSansSemiBoldItalic =>
+      TextStyle(fontFamily: Fonts.serifSansSemiBoldItalic);
+  static TextStyle get serifSansRegular =>
+      TextStyle(fontFamily: Fonts.serifSansRegular);
+  static TextStyle get serifSansLight =>
+      TextStyle(fontFamily: Fonts.serifSansLight);
+  static TextStyle get serifSansLightItalic =>
+      TextStyle(fontFamily: Fonts.serifSansLightItalic);
+  static TextStyle get serifSansItalic =>
+      TextStyle(fontFamily: Fonts.serifSansItalic);
 }
 
 extension TextStyleHelpers on TextStyle {
